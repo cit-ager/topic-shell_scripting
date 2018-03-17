@@ -111,7 +111,7 @@ APP_F() {
 ### WEB
 WEB_F() {
     head "Installing Application - Tomcat"
-    yum install httpd httpd-devel gcc &>>$LOG 
+    yum install httpd httpd-devel gcc -y &>>$LOG 
     Stat $? "Installing Web Server"
     if [ -d $JK_DIR ]; then 
         Stat SKIP "Installing Mod_JK -- IGNORE"
