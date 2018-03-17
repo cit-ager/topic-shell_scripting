@@ -7,7 +7,7 @@ if [ -z "$course" ]; then
 fi
 #### Using Simple IF-Statements
 
-if [ "$course" = devops ]; then 
+if [ "$course" == devops ]; then 
     echo "Welcome to DevOps Training"
 fi
 
